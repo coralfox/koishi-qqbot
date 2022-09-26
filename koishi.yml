@@ -1,0 +1,25 @@
+port: 5140
+maxPort: 5149
+
+plugins:
+  group:basic:
+    help:
+    ~rate-limit:
+    suggest:
+  group:console:
+    console:
+    ~dataview:
+    logger:
+    insight:
+    market:
+      registry:
+        endpoint: https://registry.npmmirror.com
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    sandbox:
+    status:
+  group:adapter:
+    ~adapter-onebot:
+    ~adapter-discord:
+    ~adapter-telegram:
+    gocqhttp:
